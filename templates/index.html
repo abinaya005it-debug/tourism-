@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism AI Chatbox</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <div class="title-row">
+                <span class="logo">🌍</span>
+                <div>
+                    <h1>Tourism AI Chatbox</h1>
+                    <p>Ask tourism & travel questions</p>
+                </div>
+            </div>
+        </header>
+
+        <main id="chatBox" class="chat-box">
+            <div class="message bot">
+                Hello! 👋 I am your Tourism AI Assistant.<br><br>
+                Ask me about destinations, attractions, hotels, food,
+                transportation, itineraries, or travel tips.
+            </div>
+        </main>
+
+        <div class="input-area">
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="Ask a tourism question..."
+                autocomplete="off"
+            >
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
